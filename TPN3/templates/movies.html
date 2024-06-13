@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Películas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: #0062cc;
+            color: #fff;
+        }
+        thead th {
+            padding: 12px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        tbody td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .movie-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .movie-rating {
+            font-size: 1em;
+            color: #ffa500;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 15px;
+            }
+            thead th, tbody td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Películas</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Título</th>
+                        <th>Año</th>
+                        <th>Tipo</th>
+                        <th>Descripción</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg" alt="Inception" width="150"></td>
+                        <td>MATRIX</td>
+                        <td>2010</td>
+                        <td>Movie</td>
+                        <td class="movie-description">A un ladrón que roba secretos corporativos mediante el uso de tecnología para compartir sueños se le asigna la tarea inversa de plantar una idea en la mente de un director ejecutivo.</td>
+                        <td class="movie-rating">8.8</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/51oBxmV-dML._AC_.jpg" alt="The Matrix" width="150"></td>
+                        <td>The Matrix</td>
+                        <td>1999</td>
+                        <td>Movie</td>
+                        <td class="movie-description">Un pirata informático aprende de unos misteriosos rebeldes la verdadera naturaleza de su realidad y su papel en la guerra contra sus controladores..</td>
+                        <td class="movie-rating">8.7</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/91GvS1T8VoL.AC_SL1500.jpg" alt="Interstellar" width="150"></td>
+                        <td>Interestelar</td>
+                        <td>2014</td>
+                        <td>Movie</td>
+                        <td class="movie-description">Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento por asegurar la supervivencia de la humanidad..</td>
+                        <td class="movie-rating">8.6</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/81AYK9IaoWL.AC_SY679.jpg" alt="The Shawshank Redemption" width="150"></td>
+                        <td>Sueño de fuga</td>  
+                        <td>1994</td>
+                        <td>Movie</td>
+                        <td class="movie-description">Dos hombres encarcelados se unen durante varios años, encontrando consuelo y eventualmente redención a través de actos de decencia común.</td>
+                        <td class="movie-rating">9.3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="The Dark Knight" width="150"></td>
+                        <td>Avengers Endgame</td>
+                        <td>2008</td>
+                        <td>Movie</td>
+                        <td class="movie-description">Cuando la amenaza conocida como el Joker emerge de su misterioso pasado, causa estragos y caos en la gente de Gotham.</td>
+                        <td class="movie-rating">9.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
